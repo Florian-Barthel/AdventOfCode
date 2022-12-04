@@ -2,9 +2,10 @@ from part1 import convert_line
 
 
 def is_overlapping(start1: int, end1: int, start2: int, end2: int):
-    overlap1 = start1 <= start2 and end1 >= start2
-    overlap2 = start2 <= start1 and end2 >= start1
-    return overlap1 or overlap2
+    overlap1 = start1 <= start2 <= end1
+    overlap2 = start1 <= end2 <= end1
+    overlap3 = start2 <= start1 <= end2
+    return overlap1 or overlap2 or overlap3
 
 
 if __name__ == '__main__':
