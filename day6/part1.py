@@ -1,4 +1,5 @@
 
+
 def distinct_letters(segment):
     letters = {}
     for letter in segment:
