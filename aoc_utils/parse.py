@@ -9,9 +9,7 @@ def convert_if_digit(element: any):
     try:
         return int(element)
     except ValueError:
-        pass
-    try:
-        return float(element)
-    except ValueError:
-        pass
-    return element
+        try:
+            return float(element)
+        except ValueError:
+            return element
