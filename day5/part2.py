@@ -12,4 +12,3 @@ if __name__ == '__main__':
                 found_start = True
 
     crane_doc.print_top()
-

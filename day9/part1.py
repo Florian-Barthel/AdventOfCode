@@ -68,7 +68,3 @@ if __name__ == '__main__':
                 rope.tail_follow()
                 location_counter.visit_location(rope.get_tail_pos())
     print(location_counter.count_visited_locations())
-
-
-
-
